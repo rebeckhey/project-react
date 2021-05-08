@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.brand-font{
+  font-family: 'Righteous', cursive;
+}
+.brand-style{
+  font-size: 2rem;
+}
+.nav-links{
+  padding:1rem;
+}
+.active{
+  color:gray;
+}
+.Home{
+  background-image: url('./Components/images/headerwhite.jpg');
+  background-size: 100%;
+  width: 100%;
+  padding-top: 54.166666666667%;
+  height: 0;
+}
+.img-size{
+height:80vh;
+}
+.price{
+  font-size: 1.4rem;
+  color:rgb(207, 86, 86);
+  font-weight: 500;
+}
+.pic{
+  height: 60vh;
+}
+.details-img{
+  height:70vh;
+}
