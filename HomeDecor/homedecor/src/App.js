@@ -5,6 +5,7 @@ import HomePage from './Components/HomePage'
 import ListProducts from './Components/ListProducts';
 import Details from './Components/Details'
 import About from './Components/About'
+import ShoppingCartList from './Components/ShoppingCartList';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/about" component={About}/>
         <Route exact path="/products" component={ListProducts}/>
         <Route exact path="/products/:id" component={Details}/>
+        <Route exact path="/shoppingcart" component={ShoppingCartList}/>
       </Switch>
       </BrowserRouter>
     </div>

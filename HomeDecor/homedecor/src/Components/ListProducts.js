@@ -6,7 +6,7 @@ import ProductsGrid from './ProductsGrid'
 const ListProducts = () => {
     const dispatch = useDispatch()
 
-    const ProductList = useSelector(state => state.PR) //state.PR (productreducer)
+    const ProductList = useSelector(state => state.PR.shoppingItems) //state.PR (productreducer)
 
 
     useEffect(() => { //useEffect kommer att köras on mount om man lägger in en tom array. När det man lägger in i arrayen ändras kommer funktionen att köras
