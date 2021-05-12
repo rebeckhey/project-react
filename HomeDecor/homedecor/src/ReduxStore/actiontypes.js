@@ -5,7 +5,9 @@ const actiontypes = () => {
             setOne: 'SET_ONE_PRODUCT'
         },
         Cart:{
-            add:'ADD_TO_CART'
+            add:'ADD_TO_CART',
+            trash: 'DELETE_FROM_CART',
+            deleteAll: 'DELETE_ALL'
         }
 
     }

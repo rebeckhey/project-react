@@ -21,11 +21,12 @@ const shopPrice = useSelector(state => state.CR.shopPrice)
                  
             }
             <div className="d-flex justify-content-center">
+                
            <div className="d-flex justify-content-center mt-4 mb-5 me-2" >
-                <button className="checkout-btn ps-5 pe-5 p-4">Total cost: <span className="disabled shopPrice">{shopPrice} :-</span>  </button>
+                <button className="checkout-btn ps-5 pe-5 p-4">Total cost: <span className="shopPrice">{shopPrice} :-</span>  </button>
             </div>
             <div className="d-flex justify-content-center mt-4 mb-5 me-2" >
-                <button className="checkout-btn ps-5 pe-5 p-4">Total amount of items in cart: <span className="disabled shopPrice">{shopQuantity}</span>   </button>
+                <button className="checkout-btn ps-5 pe-5 p-4">Total amount of items in cart: <span className="shopPrice">{shopQuantity}</span>   </button>
             </div>
 
 

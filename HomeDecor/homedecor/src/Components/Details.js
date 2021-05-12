@@ -36,7 +36,7 @@ const Details = () => {
         <h1>{oneItem.title}</h1>
         <p>{oneItem.description}</p>
         <h3 className="mb-5 price">{oneItem.price}:-</h3>
-        <button type="button" className="btn btn-outline-dark" data-mdb-ripple-color="dark" onClick={() => {dispatch(addToCart(shopItem))}} >ADD TO CART</button>
+        <button type="button" className="btn btn-outline-dark" data-mdb-ripple-color="dark" onClick={() => {dispatch(addToCart(oneItem))}} >ADD TO CART</button>
     </div>
 </div>
 ) //&& betyder att om oneItem är true, dvs den har lyckats hämta ett objekt, kommer det som står till höger att utföras

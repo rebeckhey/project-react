@@ -13,7 +13,7 @@
 .nav-links{
   padding:1rem;
 }
-.active{
+.brand-font.nav-links.navbar-brand.active-link{
   color:gray;
 }
 .Home{
@@ -58,6 +58,7 @@ height:80vh;
 }
 .remove{
   color: rgb(179, 73, 73);
+  cursor:pointer;
 }
 .checkout-btn{
   color: white;
@@ -75,8 +76,8 @@ height:80vh;
   font-size: 1.3rem;
   color: rgb(179, 73, 73);
 }
-.disabled{
-cursor:none !important;
+.disabledd{
+  cursor: sw-resize;
 }
 .sale{
   height: 250px;
