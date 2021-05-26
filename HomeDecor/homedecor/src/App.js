@@ -6,6 +6,7 @@ import ListProducts from './Components/ListProducts';
 import Details from './Components/Details'
 import About from './Components/About'
 import ShoppingCartList from './Components/ShoppingCartList';
+import Login from './Components/Login'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/products" component={ListProducts}/>
         <Route exact path="/products/:id" component={Details}/>
         <Route exact path="/shoppingcart" component={ShoppingCartList}/>
+        <Route exact path="/login" component={Login}/>
       </Switch>
       </BrowserRouter>
     </div>

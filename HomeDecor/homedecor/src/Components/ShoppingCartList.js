@@ -1,12 +1,18 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
 import ShoppingCart from './ShoppingCart'
+import { useHistory } from "react-router-dom";
 
 
 const ShoppingCartList = () => {
 const shopItem = useSelector(state => state.CR.shopItem)
 const shopQuantity = useSelector(state => state.CR.shopQuantity)
 const shopPrice = useSelector(state => state.CR.shopPrice)
+let history = useHistory()
+
+function handleClick() {
+    history.push("/login");
+  }
 
     return (
         <div className="container">
@@ -31,7 +37,7 @@ const shopPrice = useSelector(state => state.CR.shopPrice)
 
 
             <div className="d-flex justify-content-center mt-4 mb-5 ms-2" >
-                <button className="checkout-btnn checkout-btn ps-5 pe-5 p-4"> GO TO CHECKOUT</button>
+                <button className="checkout-btnn checkout-btn ps-5 pe-5 p-4" onClick={handleClick}> GO TO CHECKOUT</button>
             </div>
             </div>
         </div>
